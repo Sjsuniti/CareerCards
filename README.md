@@ -41,4 +41,22 @@ npm run build
 
 This will generate an optimized dist/ folder ready for deployment.
 
+# 🌍 Deploy on Vercel
+
+Go to https://vercel.com
+
+Click New Project
+
+Import your GitHub repo
+
+Framework: Vite
+
+Build Command: npm run build
+
+Output Directory: dist
+
+Deploy 🚀
+
+
+
 
