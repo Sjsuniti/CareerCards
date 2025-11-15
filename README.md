@@ -1,4 +1,4 @@
-CareerCards — React + Vite Project
+# CareerCards — React + Vite Project
 
 CareerCards is a simple and elegant cards-based UI built using React, Vite, and CSS.
 It displays companies, roles, logos, or job-related information using reusable card components.
@@ -8,16 +8,12 @@ The project is deployed on Vercel for fast and reliable hosting.
 
 ⚡ Built with React + Vite
 🎨 Clean and modern card UI
-
 📱 Fully responsive design
-
 🌗 Dark/Light Theme toggle (optional)
-
 🔗 Easy to deploy on Vercel
-
 📦 Reusable card components using props
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 React, Vite, CSS, Lucid React, Vercel
 
