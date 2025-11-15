@@ -7,24 +7,24 @@ const Cards = (props) => {
     <div className="parent">
     <div className='card'>
         <div className="top">
-            <img src={props.img}></img>
+            <img src={props.img} alt={props.company} />
             <button>Save <Bookmark  size={12} /></button>
         </div>
        
         <div className="center">
-             <h3>{props.company} Amazon<span>{props.timeline}2days ago</span></h3>
-             <h2>{props.role} Graphic Designer</h2>
+             <h3>{props.company}<span>{props.timeline}</span></h3>
+             <h2>{props.role} </h2>
              <div className='tag'>
-                <h4>{props.job_type}Full-time</h4>
-                <h4>{props.level}Senior-Level</h4>
+                <h4>{props.job_type}</h4>
+                <h4>{props.level}</h4>
              </div>    
         </div>
         <div className="bottom">
             <div className='price'>
-                <h3>{props.amount}$120/hr</h3>
-                <p>{props.location}Kolkata, India</p>
+                <h3>{props.amount}</h3>
+                <p>{props.location}</p>
             </div>
-        <button className='apply'>Apply Now</button>
+        <button className='apply'>Apply</button>
     </div>
     </div>
 </div>
