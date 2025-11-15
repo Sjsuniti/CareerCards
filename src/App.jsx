@@ -117,8 +117,20 @@ function App() {
   }
 ];
 
+  const [dark, setDark] = useState(false);
+  
+  const toggleTheme = () => {
+    setDark(!dark);
+  };
+
   return (
     <>
+        <div className={dark ? "dark-theme" : "light-theme"}>
+      
+      <button className="theme-toggle" onClick={toggleTheme}>
+      <SunMoon size={20} />
+    </button>
+      
        <div className="wrapper">
       {jobsData.map((job) => (
         <Cards
@@ -134,7 +146,7 @@ function App() {
         />
       ))}
     </div>
-   
+        </div>
     
    
        
