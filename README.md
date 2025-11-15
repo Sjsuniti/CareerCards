@@ -1,16 +1,88 @@
-# React + Vite
+CareerCards — React + Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CareerCards is a simple and elegant cards-based UI built using React, Vite, and CSS.
+It displays companies, roles, logos, or job-related information using reusable card components.
+The project is deployed on Vercel for fast and reliable hosting.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚡ Built with React + Vite
+🎨 Clean and modern card UI
 
-## React Compiler
+📱 Fully responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌗 Dark/Light Theme toggle (optional)
 
-## Expanding the ESLint configuration
+🔗 Easy to deploy on Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📦 Reusable card components using props
+
+🛠️ Tech Stack
+
+React, Vite, CSS, Lucid React, Vercel
+
+▶️ Setup & Installation
+
+Follow these steps to run the project locally:
+
+# Clone the repo
+git clone https://github.com/sjsuniti/CareerCards.git
+
+# Navigate into project
+cd CareerCards
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+
+Your app will run at:
+👉 http://localhost:5173/
+
+🏗️ Build for Production
+npm run build
+
+
+This will generate an optimized dist/ folder ready for deployment.
+
+
+📘 Understanding Props (Simple & Beginner-Friendly Explanation)
+
+In this project, every card uses props to display data like company name, role, and image.
+
+👉 What are Props?
+
+Props are data passed from a parent component to a child component.
+They help us reuse the same component with different values.
+
+Think:
+📦 Parent sends → Child receives.
+
+✔️ 1. Passing Props (Parent Component)
+<Cards
+  img="/google.png"
+  company="Google"
+  role="Software Engineer"
+/>
+
+✔️ 2. Receiving Props (Child Component)
+const Cards = (props) => {
+  return (
+    <div className="card">
+      <img src={props.img} alt={props.company} />
+      <h3>{props.company}</h3>
+      <p>{props.role}</p>
+    </div>
+  );
+};
+
+export default Cards;
+
+🧠 Super Easy Definition
+
+Props = Properties → Data you pass to a component.
+Parent gives it → Child uses it.
+
+This makes your Card component reusable and dynamic.
