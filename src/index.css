@@ -106,13 +106,10 @@
   width: 100%;
   display: flex;
  flex-wrap: wrap;
-<<<<<<< HEAD
-}
-=======
+
  
 }
 
->>>>>>> 56fd13b (final project)
 /* Light theme */
 .light-theme {
   background-color: #e1dddd;  /* your current light background */
@@ -146,12 +143,11 @@
   color: #000;
  
 }
-<<<<<<< HEAD
-=======
+
 /* .dark-theme .center h3 span {
   color: #b3afb3;
 }
 .dark-theme .center .tag {
   color: #780b78;
 } */
->>>>>>> 56fd13b (final project)
+
