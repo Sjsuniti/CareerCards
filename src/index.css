@@ -107,3 +107,36 @@
  flex-wrap: wrap;
  background-color: rgb(219, 216, 216);
 }
+/* Light theme */
+.light-theme {
+  background-color: #e1dddd;  /* your current light background */
+  color: #000;
+
+}
+
+/* Dark theme */
+.dark-theme {
+  background-color: #121212;
+  /* color: #ffffff; */
+  
+}
+
+
+
+/* Button style */
+.theme-toggle {
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+  background: #000;
+  color: #fff;
+
+}
+
+.dark-theme .theme-toggle {
+  background: #fff;
+  color: #000;
+ 
+}
