@@ -19,18 +19,16 @@ React, Vite, CSS, Lucid React, Vercel
 
 ▶️ Setup & Installation
 
-Follow these steps to run the project locally:
-
 # Clone the repo
 git clone https://github.com/sjsuniti/CareerCards.git
 
-# Navigate into project
+Navigate into project
 cd CareerCards
 
-# Install dependencies
+Install dependencies
 npm install
 
-# Start dev server
+Start dev server
 npm run dev
 
 
@@ -58,7 +56,6 @@ Think:
 
 ✔️ 1. Passing Props (Parent Component)
 <Cards
-  img="/google.png"
   company="Google"
   role="Software Engineer"
 />
@@ -67,7 +64,6 @@ Think:
 const Cards = (props) => {
   return (
     <div className="card">
-      <img src={props.img} alt={props.company} />
       <h3>{props.company}</h3>
       <p>{props.role}</p>
     </div>
